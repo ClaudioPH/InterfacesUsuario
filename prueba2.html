@@ -27,6 +27,9 @@ $("body").css("background","red");
 $(function(){
 var box=$('#caja');
 box.fadeout("slow";)
+box.fadeout(3000,function(){
+	alert("caja desaparece");
+})
 });
 
 });
