@@ -1,0 +1,1 @@
+(function(){var n,t;n=function(){function n(){}return n}(),this.bindEvents(),t=new n}).call(this);

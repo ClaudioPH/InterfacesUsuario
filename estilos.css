@@ -1,0 +1,10 @@
+p { text-indent: 20px; 
+	border: 1px 
+	dotted gray; 
+	line-height: 200%; 
+}
+
+h1{ color: red; 
+		text-decoration: underline; 
+		text-align: center; 
+	}
