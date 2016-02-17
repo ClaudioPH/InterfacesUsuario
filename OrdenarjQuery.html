@@ -1,0 +1,40 @@
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ordenar alfabéticamente </title>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<script>
+		
+			$(function(){
+		    var listado = $('#myId');
+		    var elementos = listado.children("li").get();
+		    elementos.sort(function(a,b) {
+		        var A = $(a).text().toUpperCase();
+		        var B = $(b).text().toUpperCase();
+		        return (A < B) ? -1 : (A > B) ? 1 : 0;
+		    });
+		    $.each(elementos, function(id, elemento) { listado.append(elemento); });
+		});
+		</script>
+
+	</head>
+	<h1>Palabras ordenadas</h1>
+
+		<ul id="myId">
+			<li>Zara</li>
+			<li>Claudio</li>
+			<li>Peña</li>
+			<li>SAnchez</li>
+			<li>Papa en </li>
+			<li>Uruapan Michoacan</li>
+		</ul>
+
+	<body>
+
+
+	</body>
+
+</html>
